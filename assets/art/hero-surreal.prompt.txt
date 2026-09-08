@@ -1,0 +1,9 @@
+Generated using the built-in image_gen tool. Files: hero-surreal.png and hero-surreal-grimace.png.
+
+Base prompt:
+Create an original full-body 2D fantasy game hero sprite, genuinely transparent background, square image, facing right in a combat-ready stance, entire figure including both feet near bottom. Surreal androgynous adult adventurer of indeterminate gender, tall ivory porcelain face with an expressive visible mouth and sharp dark brows, no beard, no sexualized features. Head unusually elongated like a bent crescent, one small floating ochre ring behind head, asymmetrical teal layered coat with a hollow oval opening through the chest revealing transparency, long gloved hands, dark angular boots, holds an ivory glass saber pointed toward right. Face is visible in three-quarter view, neutral tense mouth, readable large head for later animated grimace. Stylish restrained surrealism, chunky hand-painted flat shapes, rough cut-paper fantasy deckbuilder style, bold dark edges, muted teal ivory ochre palette, NOT realistic, no text, no background or ground, no particles, no other character.
+
+Expression edit prompt:
+Edit ONLY the facial expression of this exact transparent fantasy hero sprite. Preserve the image dimensions, pose, body, clothing, saber, crescent head shape, colors, every silhouette edge and transparent background exactly. Change the visible face to a clear strained grimace: brows pinched down, eye narrowed, upper lip curled and tightly clenched teeth showing in a small broad tense mouth, jaw taut. Not smiling, not angry screaming. Keep face location and proportions precisely unchanged; this image will be used as a registered animation frame over the original. No other changes.
+
+The alternate generation shifted the figure and introduced a checkerboard background. Only two registered interior face polygons are used at runtime, preserving the original body, alpha silhouette, and background.
