@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {layout,enemyAt,onScreen} from '../lib/layout.ts';
+test('landscape phone sizes keep enemy health above the hand and feet on the platform',()=>{for(const [w,h,inset] of [[667,375,0],[844,390,47],[932,430,59],[780,360,24]]){const l=layout(w,h,inset,inset);for(const e of l.enemies){assert.ok(Math.abs(e.y+e.height-h*.84)<.001);assert.ok(e.y-76>0);assert.ok(e.y-26<h-l.cardHeight*.69);assert.ok(e.x>=inset);assert.ok(e.x+e.width<=w-inset);}assert.ok(l.enemies[0].x+l.enemies[0].width<l.enemies[1].x+8);}});
+test('native drops select individual living enemies and ignore defeated enemies',()=>{const l=layout(844,390,47,47);for(const id of [0,1]){const r=l.enemies[id];assert.equal(enemyAt(r.x+r.width/2,r.y+r.height/2,l.enemies,[0,1]),id);assert.equal(enemyAt(r.x+r.width/2,r.y+r.height/2,l.enemies,[]),undefined);}assert.equal(enemyAt(l.hero.x,l.hero.y,l.enemies,[0,1]),undefined);assert.equal(onScreen(1,1,844,390),true);assert.equal(onScreen(-1,1,844,390),false);});
