@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Andrew the Spire",
+    "slug": "bellkeeper-expo",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/art/sentry-chunky.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#081e24",
+    "ios": {
+      "supportsTablet": true,
+      "requireFullScreen": true
+    },
+    "android": {
+      "predictiveBackGestureEnabled": false
+    },
+    "androidStatusBar": {
+      "hidden": true
+    },
+    "androidNavigationBar": {
+      "visible": "sticky-immersive"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "LANDSCAPE"
+        }
+      ],
+      "expo-asset",
+      "expo-image"
+    ]
+  }
+}
